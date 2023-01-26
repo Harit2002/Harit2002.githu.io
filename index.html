@@ -29,7 +29,7 @@
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list grid">
             <li class="nav_item">
-              <a href="#home" class="nav_link">
+              <a href="#home" class="nav_link active-link">
                 <i class="uil uil-estate nav_icon"></i> Home
               </a>
             </li>
@@ -68,6 +68,8 @@
         </div>
 
         <div class="nav_btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav_toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -200,7 +202,7 @@
           </div>
 
           <div class="about_buttons">
-            <a href="assets/pdf/" class="button button--flex">
+            <a  download="" href="assets/pdf/Harit_Khushwas_Resume.pdf" class="button button--flex" target="_blank">
               Download Resume <i class="uil uil-download-alt"></i>
             </a>
           </div>
@@ -575,8 +577,12 @@
             </div>
           </div>
           <!-- Add arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+      </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
           <!-- Pagination -->
           <div class="swiper-pagination"></div>
         </div>
@@ -660,8 +666,8 @@
             <span class="footer_subtitle">Full Stack Developer</span>
           </div>
           <ul class="footer_links">
-            <li><a href="#portfolio" class="footer_link"></a></li>
-            <li><a href="#contact" class="footer_link"></a></li>
+            <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
+            <li><a href="#contact" class="footer_link"> Contactme </a></li>
           </ul>
           <div class="footer_socials">
             <a href="https://github.com/Harit2002" class="footer_social"><i class="uil uil-github-alt"></i></a>
@@ -669,10 +675,14 @@
             <a href="https://www.linkedin.com/in/harit-khushwas-8019451b7/" class="footer_social"><i class="uil uil-linkedin"></i></a>
           </div>
         </div>
+        <p class="footer_copy"></p>
       </div>
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src=""></script>
