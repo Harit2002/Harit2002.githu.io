@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*<---====== Colors ======--->*/
-  --hue-color: 250;
+  --hue-color: 200;
 
   /*   HSL color made   */
 
@@ -281,7 +281,7 @@ img {
 .home_social {
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rm;
+  row-gap: 1rem;
 }
 
 .home_social-icon {
@@ -949,6 +949,13 @@ img {
     width: 320px;
   }
 
+  .portfolio_img {
+    width: 550px;
+  }
+
+  .nav  a{
+    font-size: var(--font-medium)
+  }
   .home_social {
     transform: translateX(-6rem);
   }
