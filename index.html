@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 
     <!--================= SWIPER CSS =================-->
     <link
@@ -65,10 +66,14 @@
             </li>
 
             <li class="nav_item">
-              <a href="./assets/pdf/Harit_Khushwas_Resume.pdf" target="_blank"
-              download="HaritKhushwas_Resume"  
-              class="nav_link">
-                <i class="uil uil-scenery nav_icon"></i> Resume
+              <a
+                id="resume"
+                href="./assets/pdf/Harit_Khushwas_Resume.pdf"
+                target="_blank"
+                download="HaritKhushwas_Resume"
+                class="nav_link"
+              >
+                <i class="uil uil-download-alt nav_icon"></i> Resume
               </a>
             </li>
           </ul>
@@ -104,7 +109,7 @@
               </a>
 
               <a
-                href="https://harit2002.github.io/"
+                href="https://github.com/Harit2002"
                 target="_blank"
                 class="home_scial-icon"
               >
@@ -146,16 +151,12 @@
             </div>
 
             <div class="home_data">
-              <h1 class="home_title">Hi, I'am Harit Khushwas</h1>
+              <h1 class="home_title">
+                Hi, I'am
+                <span id="name">Harit Khushwas</span>
+              </h1>
               <h3 class="home_subtitle">Java Backend Developer</h3>
-              <p class="home_description">
-                An enthusiastic Full-stack Developer, a lifelong learner, and
-                have a problem-solving mindset. Know Javascript, HTML, CSS,
-                Java, spring boot, Data Structure, and algorithm and have 1200+
-                hours of hands-on experience working on projects. Looking
-                forward to utilization current skillset and experience in the
-                optimized growth of myself and the organization will work for.
-              </p>
+              <p class="home_description"></p>
               <a href="#contact" class="button button--flex">
                 Contact Me<i class="uil uil-message button_icon"></i>
               </a>
@@ -179,13 +180,20 @@
 
         <div class="about_container container grid">
           <img
-            src="./assets/images/IMG_20221106_142015-removebg-preview.png"
-            alt=""
+          src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966"
+             alt=""
             class="about_img"
           />
 
           <div class="about_data">
-            <p class="about_description"></p>
+            <p class="about_description">
+              An enthusiastic Full-stack Developer, a lifelong learner, and have
+              a problem-solving mindset. Know Javascript, HTML, CSS, Java,
+              spring boot, Data Structure, and algorithm and have 1200+ hours of
+              hands-on experience working on projects. Looking forward to
+              utilization current skillset and experience in the optimized
+              growth of organization will work for.
+            </p>
 
             <div class="about_info">
               <div>
@@ -197,9 +205,9 @@
               </div>
 
               <div>
-                <div class="about_info-title">15+</div>
+                <div class="about_info-title">10+</div>
                 <span class="about_info-name"
-                  >Completed <br />
+                  >Completed mini<br />
                   project</span
                 >
               </div>
@@ -207,18 +215,19 @@
               <div>
                 <div class="about_info-title">05+</div>
                 <span class="about_info-name"
-                  >Companies <br />
-                  Worked</span
+                  >Major <br />
+                  Projects</span
                 >
               </div>
             </div>
 
             <div class="about_buttons">
               <a
-                download=""
-                href="assets/pdf/Harit_Khushwas_Resume.pdf"
-                class="button button--flex"
+                id="resume1"
+                href="./assets/pdf/Harit_Khushwas_Resume.pdf"
                 target="_blank"
+                download="HaritKhushwas_Resume"
+                class="button button--flex"
               >
                 Download Resume <i class="uil uil-download-alt"></i>
               </a>
@@ -226,127 +235,80 @@
           </div>
         </div>
       </section>
-
-      <!--==================== SKILLS ====================-->
+      <!--====================== Skills section =======================-->
       <section class="skills section" id="skills">
-        <h2 class="section_title">Skills</h2>
-        <span class="section_subtitle">My technical level</span>
-
-        <div class="skills-container container grid">
+        <div class="skill_grid">
           <div>
-            <!--============ SKILLS-1 ==============-->
-            <div class="skills_content skills_open">
-              <div class="skills_header">
-                <i class="uil uil-brackets-curly skills_icon"></i>
+            <h2 class="section_title">Technical Skills</h2>
+            <span class="section_subtitle">My technical skills</span>
 
-                <div>
-                  <h1 class="skills_title">Frontend Skills</h1>
-                  <span class="skills_subtitle">Created 2 Major Projects</span>
-                </div>
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">HTML</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_html"></span>
-                  </div>
-                </div>
+            <div class="skills__container container grid">
+              <div>
+                <div class="skills__content skills__open">
+                  <div class="skills__list grid">
+                    <div class="tech__row">
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:java"
+                            height="40"
+                          ></iconify-icon>
+                          <h3 class="services__title">Java<br /></h3>
+                        </div>
+                      </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:spring-icon"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Spring<br /></h3>
+                        </div>
+                      </div>
 
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">CSS</h3>
-                    <span class="skills_number">80%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_css"></span>
-                  </div>
-                </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            style="color: #65b743"
+                            icon="simple-icons:springboot"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Spring Boot<br /></h3>
+                        </div>
+                      </div>
 
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">JavaScript</h3>
-                    <span class="skills_number">70%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_js"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--============ SKILLS-2 ==============-->
-            <div class="skills_content skills_close">
-              <div class="skills_header">
-                <i class="uil uil-server skills_icon"></i>
-
-                <div>
-                  <h1 class="skills_title">Backend Skills</h1>
-                  <span class="skills_subtitle">Created 2 Major Projects</span>
-                </div>
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Maven</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_html"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Hibernet</h3>
-                    <span class="skills_number">80%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_css"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">MySQL</h3>
-                    <span class="skills_number">80%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_css"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Java</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_java"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">SQL</h3>
-                    <span class="skills_number">85%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_sql"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Spring Boot</h3>
-                    <span class="skills_number">80%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_spring"></span>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="vscode-icons:file-type-html"
+                            height="40"
+                          ></iconify-icon>
+                          <h3 class="services__title">HTML<br /></h3>
+                        </div>
+                      </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="vscode-icons:file-type-css"
+                            height="40"
+                          ></iconify-icon>
+                          <h3 class="services__title">CSS<br /></h3>
+                        </div>
+                      </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:javascript"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">JavaScript<br /></h3>
+                        </div>
+                      </div>
+                      <!-- tools -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -354,37 +316,104 @@
           </div>
 
           <div>
-            <!--============ SKILLS 3 ==============-->
-            <div class="skills_content skills_close">
-              <div class="skills_header">
-                <i class="uil uil-swatchbook skills_icon"></i>
+            <h2 class="section_title">Tools</h2>
+            <span class="section_subtitle">My technologies</span>
 
-                <div>
-                  <h1 class="skills_title">Tools and Platforms</h1>
-                  <span class="skills_subtitle"
-                    >Hands on experience by working on different Projects</span
-                  >
-                </div>
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">GIT</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_html"></span>
-                  </div>
-                </div>
+            <div class="skills__container container grid">
+              <div>
+                <div class="skills__content skills__open">
+                  <div class="skills__list grid">
+                    <div class="tech__row">
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:hibernate"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Hibernate<br /></h3>
+                        </div>
+                      </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:mysql-icon"
+                            height="40"
+                            width="40"
+                          ></iconify-icon>
+                          <h3 class="services__title">MySQL<br /></h3>
+                        </div>
+                      </div>
 
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Visual Studio</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_html"></span>
+                      <!-- tools -->
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            style="color: #e84d31"
+                            icon="fa6-brands:git-alt"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Git<br /></h3>
+                        </div>
+                      </div>
+
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="logos:swagger"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Swagger<br /></h3>
+                        </div>
+                      </div>
+
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="vscode-icons:file-type-maven"
+                            height="45"
+                            width="45"
+                          ></iconify-icon>
+                          <h3 class="services__title">Maven<br /></h3>
+                        </div>
+                      </div>
+
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            style="color: #e84d31"
+                            icon="skill-icons:postman"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">Postman<br /></h3>
+                        </div>
+                      </div>
+
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            style="color: #1f1e1e"
+                            icon="ant-design:github-filled"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">GitHub<br /></h3>
+                        </div>
+                      </div>
+                      <div class="skill__box">
+                        <div>
+                          <iconify-icon
+                            icon="vscode-icons:file-type-vscode"
+                            height="40"
+                            width="35"
+                          ></iconify-icon>
+                          <h3 class="services__title">VsCode<br /></h3>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -456,7 +485,11 @@
           <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
             <div class="portfolio_content grid swiper-slide">
-              <img src="./assets/images/Naukri.png" alt="" class="portfolio_img" />
+              <img
+                src="./assets/images/Naukri.png"
+                alt=""
+                class="portfolio_img"
+              />
               <div class="portfolio_data">
                 <h3 class="portfolio_title">Naukari.com</h3>
                 <p class="portfolio_description">
@@ -474,7 +507,11 @@
 
             <!--==================== PORTFOLIO 2 ====================-->
             <div class="portfolio_content grid swiper-slide" id="naukari">
-              <img src="./assets/images/BeautyVerse.png" alt="" class="portfolio_img" />
+              <img
+                src="./assets/images/BeautyVerse.png"
+                alt=""
+                class="portfolio_img"
+              />
               <div class="portfolio_data">
                 <h3 class="portfolio_title">Beauty Verse</h3>
                 <p class="portfolio_description">
@@ -492,12 +529,16 @@
 
             <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio_content grid swiper-slide">
-              <img src="./assets/images/ER_diagram.png" alt="" class="portfolio_img" />
+              <img
+                src="./assets/images/ER_diagram.png"
+                alt=""
+                class="portfolio_img"
+              />
               <div class="portfolio_data">
                 <h3 class="portfolio_title">Course Management System</h3>
                 <p class="portfolio_description">
-                  Created a course management system using core Java and JDBC 
-                  using which an organization can handle different courses and 
+                  Created a course management system using core Java and JDBC
+                  using which an organization can handle different courses and
                   student enrolled in different batches.
                 </p>
                 <a
@@ -556,10 +597,16 @@
         <div class="contact_container container grid">
           <div>
             <div class="contact_information">
-              <i class="uil uil-phone contact_icon"></i>
+              <a href="tel:7807130313"
+                ><i class="uil uil-phone contact_icon"></i
+              ></a>
               <div>
                 <h3 class="contact_title">Call Me</h3>
-                <span class="contact_subtitle">78071-30313</span>
+                <span class="contact_subtitle">
+                  <a href="tel:7807130313" class="contact_subtitle"
+                    >78071-30313</a
+                  >
+                </span>
               </div>
             </div>
 
@@ -568,6 +615,19 @@
               <div>
                 <h3 class="contact_title">Email</h3>
                 <span class="contact_subtitle">haritchandel1234@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact_information">
+              <i class="uil uil-linkedin contact_icon"></i>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/harit-khushwas-8019451b7/"
+                  class="footer_social"
+                >
+                  <h3 class="contact_title">Linkdin</h3>
+                  <span class="contact_subtitle">Harit Khushwas</span>
+                </a>
               </div>
             </div>
 
