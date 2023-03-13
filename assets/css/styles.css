@@ -463,7 +463,28 @@ img {
   column-gap: 1.5rem;
 }
 
-/*==================== SERVICES ====================*/
+/*==================== Github ====================*/
+
+.github_stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.calendar {
+  width: 1368px;
+  margin: auto;
+  align-items: center;
+}
+
+.github_img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.github_center {
+  display: grid;
+  place-items: center;
+}
 
 /* Active Modal */
 
@@ -671,9 +692,7 @@ img {
   }
 
   .skill__box {
-
-    padding: 1.5rem 0.5rem 1.25rem 0.5rem
-
+    padding: 1.5rem 0.5rem 1.25rem 0.5rem;
   }
 
   .nav_menu {
@@ -683,7 +702,7 @@ img {
     grid-template-columns: 0.25fr 3fr;
   }
 
-  .skill_grid{
+  .skill_grid {
     display: flex;
     flex-direction: column;
   }
@@ -729,7 +748,7 @@ img {
     justify-self: center;
   }
 
-  .skill_grid{
+  .skill_grid {
     display: flex;
     flex-direction: column;
   }
@@ -921,7 +940,7 @@ img {
     width: 550px;
   }
 
-  .skill_grid{
+  .skill_grid {
     display: flex;
     flex-direction: row;
   }
