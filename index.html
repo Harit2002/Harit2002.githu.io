@@ -36,7 +36,7 @@
             </li>
 
             <li class="nav_item">
-              <a href="#about" class="nav-link">
+              <a href="#about" class="nav-link about">
                 <i class="uil uil-user nav_icon"></i> About
               </a>
             </li>
@@ -142,7 +142,7 @@
                   />
 
                   <image
-                    class="home_blob-img"
+                    class="home_blob-img home-img"
                     x="18"
                     y="10"
                     xlink:href="assets/images/IMG_20221106_142015-removebg-preview.png"
@@ -154,7 +154,7 @@
             <div class="home_data">
               <h1 class="home_title">
                 Hi, I'am
-                <span id="name">Harit Khushwas</span>
+                <span id="user-detail-name">Harit Khushwas</span>
               </h1>
               <h3 class="home_subtitle">Java Backend Developer</h3>
               <p class="home_description"></p>
@@ -249,7 +249,7 @@
                   <div class="skills__list grid">
                     <div class="tech__row">
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:java"
                             height="40"
@@ -258,7 +258,7 @@
                         </div>
                       </div>
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:spring-icon"
                             height="40"
@@ -269,7 +269,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             style="color: #65b743"
                             icon="simple-icons:springboot"
@@ -281,7 +281,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="vscode-icons:file-type-html"
                             height="40"
@@ -290,7 +290,7 @@
                         </div>
                       </div>
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="vscode-icons:file-type-css"
                             height="40"
@@ -299,7 +299,7 @@
                         </div>
                       </div>
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:javascript"
                             height="40"
@@ -326,7 +326,7 @@
                   <div class="skills__list grid">
                     <div class="tech__row">
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:hibernate"
                             height="40"
@@ -336,7 +336,7 @@
                         </div>
                       </div>
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:mysql-icon"
                             height="40"
@@ -348,7 +348,7 @@
 
                       <!-- tools -->
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             style="color: #e84d31"
                             icon="fa6-brands:git-alt"
@@ -360,7 +360,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="logos:swagger"
                             height="40"
@@ -371,7 +371,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="vscode-icons:file-type-maven"
                             height="45"
@@ -382,7 +382,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             style="color: #e84d31"
                             icon="skill-icons:postman"
@@ -394,7 +394,7 @@
                       </div>
 
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             style="color: #1f1e1e"
                             icon="ant-design:github-filled"
@@ -405,7 +405,7 @@
                         </div>
                       </div>
                       <div class="skill__box skills-card-img">
-                        <div>
+                        <div class="skills-card">
                           <iconify-icon
                             icon="vscode-icons:file-type-vscode"
                             height="40"
@@ -590,28 +590,32 @@
         <span class="section_subtitle"> My github information </span>
         <div id="gitstat1">
           <div class="github_stats">
-            <div id="github-stats-card">
+            <div >
               <img
+              id="github-stats-card"
                 src="https://github-readme-stats.vercel.app/api?username=Harit2002&show_icons=true&theme=tokyonight"
                 alt=""
               />
             </div>
-            <div id="github-streak-stats">
+            <div >
               <img
+              id="github-streak-stats"
                 src="https://github-readme-streak-stats.herokuapp.com/?user=Harit2002&theme=tokyonight"
                 alt=""
               />
             </div>
-            <div class="github_center" id="github-top-langs">
+            <div class="github_center" >
               <img
+              id="github-top-langs"
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harit2002&layout=compact&hide_border=true&theme=radical"
                 alt=""
               />
             </div>
           </div>
         </div>
-        <div class=".react-activity-calendar" id="github-stats-card">
+        <div class=".react-activity-calendar" id="github-stats-card ">
           <img
+          id="react-activity-calendar"
             class="github_img"
             src="https://ghchart.rshah.org/Harit2002"
             alt="harit's Github chart"
@@ -728,11 +732,11 @@
             <a href="" class="footer_social"
               ><i class="uil uil-instagram"></i
             ></a>
-            <a
+            <aside id="contact-linkedin"
               href="https://www.linkedin.com/in/harit-khushwas-8019451b7/"
               class="footer_social"
               ><i class="uil uil-linkedin"></i
-            ></a>
+            ></aside>
           </div>
         </div>
         <p class="footer_copy"></p>
