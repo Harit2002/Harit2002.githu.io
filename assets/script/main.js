@@ -23,7 +23,7 @@ if (navClose) {
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
-const navLink = document.querySelectorAll(".nav__link");
+const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
@@ -52,10 +52,10 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 /*==================== Resume ====================*/
-document.getElementById("resume").addEventListener("click", () => {
+document.getElementById("resume-button-2").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
-document.getElementById("resume1").addEventListener("click", () => {
+document.getElementById("resume-button-1").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
 /*==================== SERVICES MODAL ====================*/
@@ -161,5 +161,3 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-

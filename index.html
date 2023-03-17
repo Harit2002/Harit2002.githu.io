@@ -23,55 +23,55 @@
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header class="header" id="nav-menu">
       <nav class="nav container">
         <a href="#" class="nav_logo">Harit Khushwas</a>
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list grid">
             <li class="nav_item">
-              <a href="#home" class="nav_link active-link">
+              <a href="#home" class="nav-link active-link home">
                 <i class="uil uil-estate nav_icon"></i> Home
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#about" class="nav_link">
+              <a href="#about" class="nav-link">
                 <i class="uil uil-user nav_icon"></i> About
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#skills" class="nav_link">
+              <a href="#skills" class="nav-link skills">
                 <i class="uil uil-file-alt nav_icon"></i> Skills
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#github" class="nav_link">
+              <a href="#github" class="nav-link github">
                 <i class="uil uil-briefcase-alt nav_icon"></i> Github
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#portfolio" class="nav_link">
+              <a href="#projects" class="nav-link projects">
                 <i class="uil uil-scenery nav_icon"></i> Protfolio
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#contact" class="nav_link">
+              <a href="#contact" class="nav-link contact">
                 <i class="uil uil-scenery nav_icon"></i> Contactme
               </a>
             </li>
 
             <li class="nav_item">
               <a
-                id="resume"
+                id="resume-button-1"
                 href="./assets/pdf/Harit_Khushwas_Resume.pdf"
                 target="_blank"
                 download="HaritKhushwas_Resume"
-                class="nav_link"
+                class="nav-link resume"
               >
                 <i class="uil uil-download-alt nav_icon"></i> Resume
               </a>
@@ -112,6 +112,7 @@
                 href="https://github.com/Harit2002"
                 target="_blank"
                 class="home_scial-icon"
+                id="contact-github"
               >
                 <i class="uil uil-github"></i>
               </a>
@@ -185,7 +186,7 @@
             class="about_img"
           />
 
-          <div class="about_data">
+          <div class="about_data" id="user-detail-intro">
             <p class="about_description">
               An enthusiastic Full-stack Developer, a lifelong learner, and have
               a problem-solving mindset. Know Javascript, HTML, CSS, Java,
@@ -223,7 +224,7 @@
 
             <div class="about_buttons">
               <a
-                id="resume1"
+                id="resume-button-2"
                 href="./assets/pdf/Harit_Khushwas_Resume.pdf"
                 target="_blank"
                 download="HaritKhushwas_Resume"
@@ -247,27 +248,27 @@
                 <div class="skills__content skills__open">
                   <div class="skills__list grid">
                     <div class="tech__row">
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:java"
                             height="40"
                           ></iconify-icon>
-                          <h3 class="services__title">Java<br /></h3>
+                          <h3 class="services__title skills-card-name">Java<br /></h3>
                         </div>
                       </div>
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:spring-icon"
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Spring<br /></h3>
+                          <h3 class="services__title skills-card-name">Spring<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             style="color: #65b743"
@@ -275,36 +276,36 @@
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Spring Boot<br /></h3>
+                          <h3 class="services__title skills-card-name">Spring Boot<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="vscode-icons:file-type-html"
                             height="40"
                           ></iconify-icon>
-                          <h3 class="services__title">HTML<br /></h3>
+                          <h3 class="services__title skills-card-name">HTML<br /></h3>
                         </div>
                       </div>
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="vscode-icons:file-type-css"
                             height="40"
                           ></iconify-icon>
-                          <h3 class="services__title">CSS<br /></h3>
+                          <h3 class="services__title skills-card-name">CSS<br /></h3>
                         </div>
                       </div>
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:javascript"
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">JavaScript<br /></h3>
+                          <h3 class="services__title skills-card-name">JavaScript<br /></h3>
                         </div>
                       </div>
                       <!-- tools -->
@@ -324,29 +325,29 @@
                 <div class="skills__content skills__open">
                   <div class="skills__list grid">
                     <div class="tech__row">
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:hibernate"
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Hibernate<br /></h3>
+                          <h3 class="services__title skills-card-name">Hibernate<br /></h3>
                         </div>
                       </div>
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:mysql-icon"
                             height="40"
                             width="40"
                           ></iconify-icon>
-                          <h3 class="services__title">MySQL<br /></h3>
+                          <h3 class="services__title skills-card-name">MySQL<br /></h3>
                         </div>
                       </div>
 
                       <!-- tools -->
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             style="color: #e84d31"
@@ -354,33 +355,33 @@
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Git<br /></h3>
+                          <h3 class="services__title skills-card-name">Git<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="logos:swagger"
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Swagger<br /></h3>
+                          <h3 class="services__title skills-card-name">Swagger<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="vscode-icons:file-type-maven"
                             height="45"
                             width="45"
                           ></iconify-icon>
-                          <h3 class="services__title">Maven<br /></h3>
+                          <h3 class="services__title skills-card-name">Maven<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             style="color: #e84d31"
@@ -388,11 +389,11 @@
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">Postman<br /></h3>
+                          <h3 class="services__title skills-card-name">Postman<br /></h3>
                         </div>
                       </div>
 
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             style="color: #1f1e1e"
@@ -400,17 +401,17 @@
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">GitHub<br /></h3>
+                          <h3 class="services__title skills-card-name">GitHub<br /></h3>
                         </div>
                       </div>
-                      <div class="skill__box">
+                      <div class="skill__box skills-card-img">
                         <div>
                           <iconify-icon
                             icon="vscode-icons:file-type-vscode"
                             height="40"
                             width="35"
                           ></iconify-icon>
-                          <h3 class="services__title">VsCode<br /></h3>
+                          <h3 class="services__title skills-card-name">VsCode<br /></h3>
                         </div>
                       </div>
                     </div>
@@ -478,7 +479,7 @@
       <section class="services section" id="services"></section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section" id="projects">
         <h2 class="section_title">Portfolio</h2>
         <span class="section_subtitle"> Most recent Projects </span>
         <div class="portfolio_container container swiper mySwiper">
@@ -588,19 +589,33 @@
         <h2 class="section_title">GitHub Stats</h2>
         <span class="section_subtitle"> My github information </span>
         <div id="gitstat1">
-          <div class="github_stats"> 
-            <div>
-              <img src="https://github-readme-stats.vercel.app/api?username=Harit2002&show_icons=true&theme=tokyonight" alt="">
+          <div class="github_stats">
+            <div id="github-stats-card">
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=Harit2002&show_icons=true&theme=tokyonight"
+                alt=""
+              />
+            </div>
+            <div id="github-streak-stats">
+              <img
+                src="https://github-readme-streak-stats.herokuapp.com/?user=Harit2002&theme=tokyonight"
+                alt=""
+              />
+            </div>
+            <div class="github_center" id="github-top-langs">
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harit2002&layout=compact&hide_border=true&theme=radical"
+                alt=""
+              />
+            </div>
           </div>
-          <div>
-              <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harit2002&theme=tokyonight" alt="">
-          </div>
-          <div class="github_center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harit2002&layout=compact&hide_border=true&theme=radical" alt=""></div>
-          </div>
-          
         </div>
-        <div class="calendar">
-          <img class="github_img" src="https://ghchart.rshah.org/Harit2002" alt="atrisomya's Github chart" />
+        <div class=".react-activity-calendar" id="github-stats-card">
+          <img
+            class="github_img"
+            src="https://ghchart.rshah.org/Harit2002"
+            alt="harit's Github chart"
+          />
         </div>
       </section>
 
@@ -617,7 +632,7 @@
               ></a>
               <div>
                 <h3 class="contact_title">Call Me</h3>
-                <span class="contact_subtitle">
+                <span class="contact_subtitle" id="contact-phone">
                   <a href="tel:7807130313" class="contact_subtitle"
                     >78071-30313</a
                   >
@@ -629,7 +644,9 @@
               <i class="uil uil-envelope contact_icon"></i>
               <div>
                 <h3 class="contact_title">Email</h3>
-                <span class="contact_subtitle">haritchandel1234@gmail.com</span>
+                <span class="contact_subtitle" id="contact-email"
+                  >haritchandel1234@gmail.com</span
+                >
               </div>
             </div>
 
@@ -736,4 +753,3 @@
     <script src="./assets/script/main.js"></script>
   </body>
 </html>
-

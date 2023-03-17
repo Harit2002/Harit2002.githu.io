@@ -91,7 +91,7 @@ body.dark-theme {
   align-items: center;
 }
 
-#name {
+#user-detail-name {
   color: var(--first-color);
 }
 
@@ -229,7 +229,7 @@ img {
   gap: 2rem;
 }
 
-.nav_link {
+.nav-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,7 +238,7 @@ img {
   font-weight: var(--font-medium);
 }
 
-.nav_link:hover {
+.nav-link:hover {
   color: var(--first-color);
 }
 
