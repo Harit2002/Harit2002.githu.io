@@ -21,6 +21,29 @@ if (navClose) {
   });
 }
 
+/*==================== Send mail function====================*/
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("ename").value,
+    email: document.getElementById("e-mail").value,
+    message: document.getElementById("emessage").value,
+  };
+  const serviceId = "service_ecr98md";
+  const templateId = "template_squzhke";
+
+  emailjs
+    .send(serviceId, templateId, params)
+    .then((res) => {
+      document.getElementById("ename").value = "";
+      document.getElementById("e-mail").value = "";
+      document.getElementById("emessage").value = "";
+
+      alert("Your message sent seccuessfully");
+    })
+    .catch((err) => console.log(errr));
+}
+
 /*==================== REMOVE MENU MOBILE ====================*/
 
 const navLink = document.querySelectorAll(".nav-link");
