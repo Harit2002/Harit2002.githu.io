@@ -23,26 +23,49 @@ if (navClose) {
 
 /*==================== Send mail function====================*/
 
-function sendMail() {
-  var params = {
-    name: document.getElementById("ename").value,
-    email: document.getElementById("e-mail").value,
-    message: document.getElementById("emessage").value,
-  };
-  const serviceId = "service_ecr98md";
-  const templateId = "template_squzhke";
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  emailjs
-    .send(serviceId, templateId, params)
-    .then((res) => {
-      document.getElementById("ename").value = "";
-      document.getElementById("e-mail").value = "";
-      document.getElementById("emessage").value = "";
+  if (
+    document.getElementById("name").value != "" &&
+    document.getElementById("email").value != "" &&
+    document.getElementById("message").value != ""
+  ) {
+    //button animation
+    document.getElementById("email-submit").innerText = "Sending...";
 
-      alert("Your message sent seccuessfully");
-    })
-    .catch((err) => console.log(errr));
-}
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_ecr98md";
+    const templateID = "template_squzhke";
+
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+
+        document.getElementById("email-submit").innerHTML = `
+          Send message
+          <i class="uil uil-message button__icon"></i>`;
+
+        alert("Your message has been send successfully!");
+      })
+      .catch((err) => {
+        document.getElementById("email-submit").innerHTML = `
+          Send message
+          <i class="uil uil-message button__icon"></i>`;
+        console.log(err);
+      });
+  } else {
+    alert("Please fill out all the fields");
+  }
+});
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
@@ -75,10 +98,10 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 /*==================== Resume ====================*/
-document.getElementById("resume-button-2").addEventListener("click", () => {
+document.getElementById("resume-link-2").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
-document.getElementById("resume-button-1").addEventListener("click", () => {
+document.getElementById("resume-link-1").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
 /*==================== SERVICES MODAL ====================*/
@@ -148,8 +171,8 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/ const themeButton =
-  document.getElementById("theme-button");
+/*==================== DARK LIGHT THEME ====================*/ 
+const themeButton = document.getElementById("theme-button");
 
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
