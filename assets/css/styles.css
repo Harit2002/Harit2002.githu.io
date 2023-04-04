@@ -70,6 +70,8 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+ 
+  
 }
 
 /*============== Variable Dark theme ===============*/
@@ -148,7 +150,7 @@ img {
 /*<----======== REUSABLE CSS Classes ========---->*/
 
 .section {
-  padding: 2rem 4rem;
+  padding: 6rem 2rem  2rem;
 }
 
 .section_title {
@@ -783,9 +785,30 @@ img {
 }
 /* For medium devices */
 
+@media screen and (max-width: 568px) {
+  
+  .work__container{
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto;
+  }
+  .about_img{
+    width: 100%;
+  }
+
+}
+
 @media screen and (min-width: 568px) {
   .home_content {
     grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .about_img{
+    width: 100%;
+  }
+
+  .work__container{
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto;
   }
 
   .home_data {
@@ -827,8 +850,15 @@ img {
     margin: 0;
   }
 
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 20px;
+    row-gap: 2rem;
+  }
   .section {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem 1rem;
   }
 
   .section_subtitle {
@@ -980,6 +1010,15 @@ img {
   .footer_container {
     padding: 0;
   }
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 20px;
+    row-gap: 2rem;
+  }
+  
+
 
   .home_blob {
     width: 320px;
