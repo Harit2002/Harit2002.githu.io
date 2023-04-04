@@ -54,7 +54,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
           Send message
           <i class="uil uil-message button__icon"></i>`;
 
-        alert("Your message has been send successfully!");
+        alert("Your message has been sent successfully!");
       })
       .catch((err) => {
         document.getElementById("email-submit").innerHTML = `
@@ -107,11 +107,6 @@ document.getElementById("resume-link-1").addEventListener("click", () => {
 /*==================== SERVICES MODAL ====================*/
 
 /*==================== PORTFOLIO SWIPER ====================*/
-document.getElementById("naukari").addEventListener("click", () => {
-  window.open(
-    "https://633941b5c893db24407fb5e7--vocal-naiad-2ed0c7.netlify.app/index.html"
-  );
-});
 
 var swiper = new Swiper(document.querySelector(".swiper"), {
   cssMode: true,
