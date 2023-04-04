@@ -98,10 +98,10 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 /*==================== Resume ====================*/
-document.getElementById("resume-link-2").addEventListener("click", () => {
+document.getElementById("resume-button-2").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
-document.getElementById("resume-link-1").addEventListener("click", () => {
+document.getElementById("resume-button-1").addEventListener("click", () => {
   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 });
 /*==================== SERVICES MODAL ====================*/
@@ -166,7 +166,7 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
 
 const darkTheme = "dark-theme";
