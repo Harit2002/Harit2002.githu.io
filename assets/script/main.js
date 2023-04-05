@@ -98,9 +98,12 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 /*==================== Resume ====================*/
-// document.getElementById("resume-button-2").addEventListener("click", () => {
-//   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
-// });
+function resume () {
+  window.open(
+    `https://drive.google.com/file/d/1q0krGW7Glg-oFi9MQJh9KFnak81wrSN7/view?usp=share_link`,
+    "_blank"
+  );
+});
 // document.getElementById("resume-button-1").addEventListener("click", () => {
 //   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 // });
