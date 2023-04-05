@@ -100,10 +100,10 @@ skillsHeader.forEach((el) => {
 /*==================== Resume ====================*/
 function resume () {
   window.open(
-    `https://drive.google.com/file/d/1q0krGW7Glg-oFi9MQJh9KFnak81wrSN7/view?usp=share_link`,
+    `https://drive.google.com/file/d/15Y4IzXLEga_tnqmMiTU4ylny3YaT_u4x/view?usp=share_link`,
     "_blank"
   );
-});
+};
 // document.getElementById("resume-button-1").addEventListener("click", () => {
 //   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 // });
