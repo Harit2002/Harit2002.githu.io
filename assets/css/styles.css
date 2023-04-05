@@ -70,8 +70,6 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
- 
-  
 }
 
 /*============== Variable Dark theme ===============*/
@@ -116,6 +114,11 @@ body.dark-theme {
   margin: 0;
 }
 
+#resume-button-2 {
+  border: none;
+  background: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -150,7 +153,7 @@ img {
 /*<----======== REUSABLE CSS Classes ========---->*/
 
 .section {
-  padding: 6rem 2rem  2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .section_title {
@@ -736,7 +739,7 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 
 /* For small devices */
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 598px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -782,31 +785,35 @@ img {
   .project_img {
     width: 200px;
   }
-}
-/* For medium devices */
+  .about_info {
+    margin: var(--mb-2-5) 0;
+  }
 
-@media screen and (max-width: 568px) {
-  
-  .work__container{
+  .work__container {
     grid-auto-columns: 1fr;
     grid-template-columns: auto;
   }
-  .about_img{
+
+  .about_img {
     width: 100%;
   }
-
 }
+/* For medium devices */
 
 @media screen and (min-width: 568px) {
   .home_content {
     grid-template-columns: max-content 1fr 1fr;
   }
 
-  .about_img{
+  .about_info {
+    margin: var(--mb-2-5) 0;
+  }
+
+  .about_img {
     width: 100%;
   }
 
-  .work__container{
+  .work__container {
     grid-auto-columns: 1fr;
     grid-template-columns: auto;
   }
@@ -1017,8 +1024,6 @@ img {
     gap: 20px;
     row-gap: 2rem;
   }
-  
-
 
   .home_blob {
     width: 320px;
