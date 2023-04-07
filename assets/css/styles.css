@@ -405,6 +405,7 @@ img {
 .about_info-title,
 .about_info-name {
   display: block;
+  margin-top: 6px;
   text-align: center;
 }
 
