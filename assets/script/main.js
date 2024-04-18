@@ -40,11 +40,11 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
       message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_ecr98md";
+    const serviceID = "service_38lpomk";
     const templateID = "template_squzhke";
 
     emailjs
-      .send(serviceID, templateID, params)
+      .sendForm(serviceID, templateID, params)
       .then((res) => {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
@@ -98,12 +98,12 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 /*==================== Resume ====================*/
-function resume () {
+function resume() {
   window.open(
     `https://drive.google.com/file/d/15Y4IzXLEga_tnqmMiTU4ylny3YaT_u4x/view?usp=share_link`,
     "_blank"
   );
-};
+}
 // document.getElementById("resume-button-1").addEventListener("click", () => {
 //   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
 // });
